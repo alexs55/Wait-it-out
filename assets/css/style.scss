@@ -1,0 +1,108 @@
+// Sass variables
+$mainColor: rgb(38, 156, 224);
+$desktop: 500px;
+//Sass media query mixin
+
+body{background-color: black;
+color: white;
+}
+#title{
+    font-family: 'Raleway', sans-serif;
+    color: $mainColor;
+    font-size:15vw;
+}
+.icon{
+    height: 20vw;
+}
+
+    .sub{
+        font-size: 12vw;
+    }
+    .option{
+        border: 1px solid $mainColor;
+        padding: 13px;
+        width: 80%;
+        border-radius: 5px;
+        background-color: rgb(16, 60, 85);
+        text-align: center;
+        .localeInfo{
+            font-size: 4vw;
+        }
+        .nameDiv{
+            font-size:6vw;
+        }
+    }
+}
+
+#top, #bottom, #left, #right {
+	background: $mainColor;
+	position: fixed;
+	}
+#left, #right {
+    top: 0; bottom: 0;
+    width: 5px;
+    }
+#left { 
+    left: 0; 
+}
+#right { 
+    right: 0; 
+}
+#top, #bottom {
+    left: 0; right: 0;
+    height: 5px;
+}
+#top { 
+    top: 0;
+}
+#bottom { 
+    bottom: 0; 
+}
+.mmodal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    line-height: 1.6;
+    .modal-content{
+        background-color: #f4f4f4;
+        color: rgb(0, 0, 0);
+        margin: 30% auto;
+        padding: 8px;
+        width: 70%;
+        /* height: 25%; */
+        border-radius: 5%;
+        border: 4px solid $mainColor;
+        text-align: center;
+        #closeBtn{
+            color: $mainColor;
+            float: left;
+            font-size: 16px;
+            padding: 0px;
+            margin: 0 auto;
+            width: 20%;
+        }
+        #closeBtn:hover, #closeBtn:focus{
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+
+#home-btn{
+    width: 10%;
+}
+#map{
+    height: 350px;
+    width: 100%;
+    display: none;
+}
+
